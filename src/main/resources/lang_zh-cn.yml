@@ -29,4 +29,4 @@ break-redundant-additional-sign: '&6[LockettePro] &a你拆掉了废弃的额外�
 cannot-break-this-additional-sign: '&6[LockettePro] &c你不可以拆掉别人的牌子。'
 block-is-locked: '&6[LockettePro] &c这个方块已上锁。'
 cannot-interfere-with-others: '&6[LockettePro] &c你不能在已上锁的方块附近放这个。'
-sign-error: '&4[ERROR]'
+sign-error: '&4[错误]'

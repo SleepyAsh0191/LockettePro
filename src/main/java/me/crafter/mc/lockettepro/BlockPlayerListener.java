@@ -344,12 +344,11 @@ public class BlockPlayerListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onBucketEmpty(PlayerBucketEmptyEvent event) {
-        Player player = event.getPlayer();
+        final Player player = event.getPlayer();
         Block block = event.getBlockClicked().getRelative(event.getBlockFace());
         if (LocketteProAPI.isProtected(block) && !(LocketteProAPI.isOwner(block, player) || LocketteProAPI.isOwnerOfSign(block, player))) {
             event.setCancelled(true);
             new BukkitRunnable() {
-                @Override
                 public void run() {
                     if (!player.isDead()) {
                         player.updateInventory();
